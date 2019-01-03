@@ -13,7 +13,7 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: (pop3|imap)-login: Disconnected: Logged out$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: (pop3|imap)-login: Login: user=<[-_.@[:alnum:]]+>, method=[[:alnum:]-]+, rip=[.:[:xdigit:]]+, lip=[.:[:xdigit:]]+(, mpid=[[:digit:]]+)?(, (TLS( handshake)?|secured))?(, session=<[[:print:]]+>)?(, (TLS( handshake)?|secured))?$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: IMAP\([-_.@[:alnum:]]+\): Connection closed(: Connection reset by peer)?( bytes=[[:digit:]]+/[[:digit:]]+)?$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: (pop3|imap)\([-_.@[:alnum:]]+\):(: Logged out| for inactivity|: Disconnected|: Disconnected in IDLE|)( in=[[:digit:]]+ out=[[:digit:]]+)?$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: (pop3|imap)\([-_.@[:alnum:]]+\):( Logged out| for inactivity|: Disconnected|: Disconnected in IDLE|)( in=[[:digit:]]+ out=[[:digit:]]+)?$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: (pop3|imap)\([-_.@[:alnum:]]+\): Connection closed( in=[[:digit:]]+ out=[[:digit:]]+)?$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: (pop3|imap)\([-_.@[:alnum:]]+\): Disconnected(: Logged out| for inactivity|: Disconnected|: Disconnected in IDLE|)( in=[[:digit:]]+ out=[[:digit:]]+)?$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: IMAP\([-_.@[:alnum:]]+\): Fixed index file /[-._/[:alnum:]&]+/dovecot\.index: first_(recent|unseen)_uid_lowwater [[:digit:]]+ -> [[:digit:]]+$
