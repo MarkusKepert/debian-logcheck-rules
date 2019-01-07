@@ -164,7 +164,7 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtpd?\[[[:digit:]]+\]: Peer verification: [[:digit:]]+ dNSNames in certificate found, but no one does match [-_.[:alnum:]]+$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtpd?\[[[:digit:]]+\]: warning: (tls_text_name: [-._[:alnum:]]+\[[.[:digit:]]+\]: )?peer certificate has no (subject CN|issuer Organization)$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtpd\[[[:digit:]]+\]: warning: SASL authentication failure: .+$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtpd\[[[:digit:]]+\]: warning: [-._[:alnum:]]+\[[.:[:xdigit:]]+\]: SASL (LOGIN|PLAIN|(DIGEST|CRAM)-MD5|APOP) authentication failed(:[ [:alnum:]]*)?$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtpd\[[[:digit:]]+\]: warning: [-._[:alnum:]]+\[[.:[:xdigit:]]+\]: SASL (LOGIN|PLAIN|(DIGEST|CRAM)-MD5|APOP|Plain) authentication failed(:[ [:alnum:]]*)?$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtpd\[[[:digit:]]+\]: warning: non-SMTP command from [^[:space:]]+\[[[:xdigit:].:]{3,39}\]: .+$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/trivial-rewrite\[[[:digit:]]+\]: warning: valid_ipv4_hostaddr: invalid octet count: ?$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtpd\[[[:digit:]]+\]: warning: TLS library problem: [[:digit:]]+:error:[[:xdigit:]]+:SSL routines:SSL23_GET_CLIENT_HELLO:(unknown protocol|http request):s23_srvr\.c:[[:digit:]]+:$
